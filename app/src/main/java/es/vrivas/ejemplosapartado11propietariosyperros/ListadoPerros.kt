@@ -30,7 +30,7 @@ class ListadoPerros : Fragment(){
     ): View? {
         // Inflate the layout for this fr_listado_perros
         return inflater.inflate(R.layout.fragment_listado_perros, container, false)
-    }
+    } // Devuelve el View del fragmento para que pueda ser usado por la actividad
 
 
     override fun onResume() {

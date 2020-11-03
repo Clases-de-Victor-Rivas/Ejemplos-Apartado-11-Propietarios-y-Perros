@@ -1,7 +1,5 @@
 package es.vrivas.ejemplosapartado11propietariosyperros
-
 import java.time.LocalDate
-
 @Suppress("unused")
 class Persistencia() {
     class Propietario( _nombre: String, _fecha: LocalDate, _direccion: String  ) {
@@ -13,7 +11,6 @@ class Persistencia() {
             return "{$nombre, "+fecha.toString()+",$direccion}"
         }
     }
-
     class Perro ( _nombre: String, _fecha: LocalDate, _raza: String  ){
         var nombre= _nombre
         var fecha= _fecha
@@ -23,11 +20,9 @@ class Persistencia() {
             return "{$nombre, "+fecha.toString()+",$raza}\n"
         }
     }
-
     val propietarios: MutableList<Propietario> = mutableListOf()
     val perros: MutableList<Perro> = mutableListOf()
-
-
 }
 
+/// La variable datos se usará para ir añadiendo nuevos propietarios y perros
 var datos=Persistencia()

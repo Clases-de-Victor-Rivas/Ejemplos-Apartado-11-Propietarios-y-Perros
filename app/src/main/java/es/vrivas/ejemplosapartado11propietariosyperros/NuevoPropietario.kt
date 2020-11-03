@@ -27,7 +27,8 @@ class NuevoPropietario : AppCompatActivity(), View.OnClickListener {
                 datos.propietarios.add(
                     Persistencia.Propietario(
                         et_nombre.text.toString(),
-                        date, et_direccion.text.toString()
+                        date,
+                        et_direccion.text.toString()
                     )
                 )
             }

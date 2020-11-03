@@ -6,7 +6,6 @@
     android:orientation="vertical"
     tools:context=".ListadoPerros">
 
-    <!-- TODO: Update blank fr_listado_perros layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

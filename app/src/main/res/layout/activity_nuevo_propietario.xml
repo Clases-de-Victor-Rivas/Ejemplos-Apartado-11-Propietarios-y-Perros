@@ -83,7 +83,7 @@
         android:background="?android:attr/listDivider" />
 
     <fragment
-        android:id="@+id/fragment2"
+        android:id="@+id/fragment3"
         android:name="es.vrivas.ejemplosapartado11propietariosyperros.ListadoPropietarios"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
