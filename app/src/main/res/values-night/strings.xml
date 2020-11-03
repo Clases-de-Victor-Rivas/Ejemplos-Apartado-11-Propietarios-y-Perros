@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_adir_perro">Añadir perro</string>
+    <string name="listado_de_propietarios">LIstado de propietarios</string>
+    <string name="a_adir_propietario">Añadir propietario</string>
+</resources>
