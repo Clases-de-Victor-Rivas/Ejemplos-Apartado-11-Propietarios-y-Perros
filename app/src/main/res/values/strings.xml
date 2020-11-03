@@ -16,7 +16,6 @@
     <string name="cancelar">Cancelar</string>
     <string name="nuevo_propietario">Nuevo propietario</string>
     <string name="direcci_n">Dirección:</string>
-    <string name="direcci_on_del_propietario">Dirección del propietario</string>
     <string name="direcci_n_del_propietario">Dirección del propietario</string>
 
 </resources>
