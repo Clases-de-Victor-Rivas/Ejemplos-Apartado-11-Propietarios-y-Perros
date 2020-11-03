@@ -6,4 +6,8 @@
     <string name="a_adir_perro">Añadir perro</string>
     <string name="listado_de_propietarios">LIstado de propietarios</string>
     <string name="a_adir_propietario">Añadir propietario</string>
+    <string name="nombre">Nombre:</string>
+    <string name="etiqueta_nombre">Nombre</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento:</string>
+    <string name="a_adir">Añadir</string>
 </resources>

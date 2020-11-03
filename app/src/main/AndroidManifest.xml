@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EjemplosApartado11PropietariosYPerros">
+        <activity android:name=".NuevoPropietario"></activity>
+        <activity android:name=".NuevoPerro"></activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
