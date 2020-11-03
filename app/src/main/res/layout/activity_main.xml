@@ -9,20 +9,49 @@
     <fragment
         android:id="@+id/fr_listado_propietarios"
         android:name="es.vrivas.ejemplosapartado11propietariosyperros.ListadoPropietarios"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_add_propietario"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_add_propietario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/a_adir_propietario"
+        app:layout_constraintBottom_toTopOf="@+id/fr_listado_perros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_listado_propietarios" />
 
     <fragment
         android:id="@+id/fr_listado_perros"
         android:name="es.vrivas.ejemplosapartado11propietariosyperros.ListadoPerros"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="109dp"
-        app:layout_constraintStart_toStartOf="@+id/fr_listado_propietarios"
-        app:layout_constraintTop_toBottomOf="@+id/fr_listado_propietarios" />
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_add_perro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_add_propietario" />
+
+    <Button
+        android:id="@+id/bt_add_perro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="413dp"
+        android:text="@string/a_adir_perro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_listado_perros" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

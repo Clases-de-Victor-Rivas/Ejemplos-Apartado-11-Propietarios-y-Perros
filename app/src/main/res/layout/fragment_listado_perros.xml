@@ -11,17 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/listado_de_perros"
-        android:textSize="36sp" />
+        android:textSize="26sp" />
 
     <TextView
         android:id="@+id/tv_perros"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/bt_add_perro"
-        android:layout_width="match_parent"
-        android:layout_height="78dp"
-        android:text="@string/a_adir_perro" />
+
 
 </LinearLayout>
