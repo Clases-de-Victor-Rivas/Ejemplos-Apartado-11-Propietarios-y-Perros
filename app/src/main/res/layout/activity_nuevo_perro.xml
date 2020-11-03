@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -8,10 +7,10 @@
     tools:context=".NuevoPropietario">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_etiqueta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nuevo perro"
+        android:text="@string/nuevo_perro"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -34,17 +33,19 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Raza:" />
+            android:text="@string/raza" />
 
         <EditText
             android:id="@+id/et_raza"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:contentDescription="Raza del perro"
+            android:contentDescription="@string/raza_del_perro"
             android:ems="10"
-            android:hint="Raza del perro"
-            android:inputType="textPersonName" />
+            android:hint="@string/raza_del_perro"
+            android:inputType="textPersonName"
+            android:autofillHints="Raza del perro"
+            tools:ignore="ContentDescription" />
     </LinearLayout>
 
     <LinearLayout
@@ -63,7 +64,8 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:gravity="center"
-            android:text="@string/a_adir" />
+            android:text="@string/a_adir"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/bt_nuevo_perro_cancelar"
@@ -75,7 +77,8 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:gravity="center"
-            android:text="Cancelar" />
+            android:text="@string/cancelar"
+            tools:ignore="ButtonStyle" />
     </LinearLayout>
 
     <View

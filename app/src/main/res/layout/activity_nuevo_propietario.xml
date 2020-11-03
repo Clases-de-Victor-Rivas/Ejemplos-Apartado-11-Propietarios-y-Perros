@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,10 +11,10 @@
     tools:context=".NuevoPropietario">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_etiqueta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nuevo propietario"
+        android:text="@string/nuevo_propietario"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -37,17 +36,17 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dirección:" />
+            android:text="@string/direcci_n" />
 
         <EditText
             android:id="@+id/et_direccion"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:contentDescription="Nombre del propietario"
+            android:hint="@string/direcci_n_del_propietario"
             android:ems="10"
-            android:hint="Dirección del propietario"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:autofillHints="@string/direcci_n_del_propietario" />
     </LinearLayout>
 
     <LinearLayout
@@ -62,18 +61,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="0dp"
-            android:text="Añadir" />
+            android:text="@string/a_adir"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/bt_nuevo_propietario_cancelar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:text="Cancelar" />
+            android:text="@string/cancelar"
+            tools:ignore="ButtonStyle" />
     </LinearLayout>
 
     <View

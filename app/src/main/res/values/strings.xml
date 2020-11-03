@@ -10,4 +10,13 @@
     <string name="etiqueta_nombre">Nombre</string>
     <string name="fecha_de_nacimiento">Fecha de Nacimiento:</string>
     <string name="a_adir">Añadir</string>
+    <string name="nuevo_perro">Nuevo perro</string>
+    <string name="raza">Raza:</string>
+    <string name="raza_del_perro">Raza del perro</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nuevo_propietario">Nuevo propietario</string>
+    <string name="direcci_n">Dirección:</string>
+    <string name="direcci_on_del_propietario">Dirección del propietario</string>
+    <string name="direcci_n_del_propietario">Dirección del propietario</string>
+
 </resources>
