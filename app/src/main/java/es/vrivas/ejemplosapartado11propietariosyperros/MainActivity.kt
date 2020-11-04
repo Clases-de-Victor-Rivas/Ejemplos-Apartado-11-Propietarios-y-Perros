@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -14,6 +16,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
         bt_add_perro.setOnClickListener(this)
         bt_add_propietario.setOnClickListener(this)
+
+        val acerca_de_fragment = acerca_de.newInstance("Víctor Rivas", 2020)
+        val visitar_pagina_web = VisitarPaginaWeb.newInstance()
+
+        val fragmentManager: FragmentManager = supportFragmentManager
+        val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.add(R.id.ly_contenedor, acerca_de_fragment)
+        fragmentTransaction.add(R.id.ly_contenedor, visitar_pagina_web)
+
+        fragmentTransaction.commit()
     }
 
 

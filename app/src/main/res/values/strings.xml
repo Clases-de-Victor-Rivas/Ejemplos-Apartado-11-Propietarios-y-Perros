@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Ejemplos Apartado 11 Propietarios y Perros</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -17,5 +17,7 @@
     <string name="nuevo_propietario">Nuevo propietario</string>
     <string name="direcci_n">Dirección:</string>
     <string name="direcci_n_del_propietario">Dirección del propietario</string>
+    <string name="c_autor_anio" tools:ignore="Typos">&#169; #Autor, #Anio</string>
+    <string name="visitar_web_v_rivas">Visitar Web V. Rivas</string>
 
 </resources>
