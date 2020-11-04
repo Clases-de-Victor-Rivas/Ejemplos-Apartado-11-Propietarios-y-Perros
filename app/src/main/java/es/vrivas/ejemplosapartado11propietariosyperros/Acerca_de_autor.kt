@@ -8,23 +8,23 @@ import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_acerca_de.*
 
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "autor"
-private const val ARG_PARAM2 = "año"
+private const val ARG_AUTOR = "autor"
+private const val ARG_ANIO = "año"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [acerca_de.newInstance] factory method to
+ * Use the [Acerca_de_autor.newInstance] factory method to
  * create an instance of this fragment.
  */
-class acerca_de : Fragment() {
+class Acerca_de_autor : Fragment() {
     private var autor: String? = null
     private var anio: Int? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            autor = it.getString(ARG_PARAM1)
-            anio = it.getInt(ARG_PARAM2)
+            autor = it.getString(ARG_AUTOR)
+            anio = it.getInt(ARG_ANIO)
         }
     }
 
@@ -51,10 +51,10 @@ class acerca_de : Fragment() {
          */
         @JvmStatic
         fun newInstance(autor: String, anio: Int) =
-                acerca_de().apply {
+                Acerca_de_autor().apply {
                     arguments = Bundle().apply {
-                        putString(ARG_PARAM1, autor)
-                        putInt(ARG_PARAM2, anio)
+                        putString(ARG_AUTOR, autor)
+                        putInt(ARG_ANIO, anio)
                     }
                 }
     }
